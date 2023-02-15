@@ -10,13 +10,15 @@ char* concat(const char*, const char*);
 int main(void)
 {
 	int n;
+	int nLastDigit;
+	char *text;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	int nLastDigit = n%10;
+	nLastDigit = n%10;
 
-	char *text = "Last digit of %d is %d ";
+	text = "Last digit of %d is %d ";
 	
 	if(nLastDigit > 5){
 		text = concat(text, "and is greater than 5");
