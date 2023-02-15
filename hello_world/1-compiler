@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp -S $CFILE -o ${$CFILE//.c/.o}
+gcc -c $CFILE -o $(printf '%s' $CFILE | tr 'c' 'o')
