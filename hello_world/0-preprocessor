@@ -1,0 +1,4 @@
+#!/bin/bash
+cpp -E $CFILE -o c
+#!/bin/bash
+cpp -E $CFILE -o c
