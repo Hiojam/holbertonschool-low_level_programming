@@ -1,7 +1,3 @@
-echo "Please type file name"
-read fileName
-
-cat <<EOT >> $fileName
 #include <stdio.h>
 
 /**
@@ -11,8 +7,13 @@ cat <<EOT >> $fileName
  */
 int main(void)
 {
+	char ch;
+
+	for (ch = 'a' ; ch <= 'z' ; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
+
 	return (0);
 }
-EOT
-
-echo "File created successfuly."
