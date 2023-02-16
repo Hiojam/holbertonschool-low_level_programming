@@ -6,7 +6,11 @@
 
 char *concat(const char*, const char*);
 
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
@@ -38,6 +42,13 @@ int main(void)
 	return (0);
 }
 
+/**
+ * concat - Concat two strings and return the result
+ * @s1: base string
+ * @s2: concat string
+ *
+ * Return: char*
+ */
 char *concat(const char *s1, const char *s2)
 {
 	char *result = malloc(strlen(s1) + strlen(s2) + 1);
