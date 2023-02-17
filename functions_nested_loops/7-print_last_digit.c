@@ -10,7 +10,7 @@ void printnumber(int);
  */
 int print_last_digit(int n)
 {
-	printnumber(n);
+	printnumber(n % 10);
 	return (n % 10);
 }
 
