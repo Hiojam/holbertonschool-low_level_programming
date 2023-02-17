@@ -1,5 +1,7 @@
 #include "main.h"
 
+void printnumber(int);
+
 /**
  * times_table - prints the 9 times table, starting with 0.
  */
@@ -21,11 +23,13 @@ void times_table(void)
 				continue;
 			}
 			prevNum = prevNum + rows;
-			printf("%d", prevNum);
+			printnumber(prevNum);
 
 			if (lines != 9)
 			{
 				_putchar(',');
+				if (prevNum < 10)
+					_putchar(' ');
 				_putchar(' ');
 			}
 		}
@@ -33,4 +37,23 @@ void times_table(void)
 		_putchar('\n');
 
 	}
+}
+
+/**
+ * printnumber - prints a number
+ * @n: number to print
+ */
+void printnumber(int n)
+{
+
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
+
+	if (n / 10)
+		printnumber(n / 10);
+
+	_putchar(n % 10 + '0');
 }
