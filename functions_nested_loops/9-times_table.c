@@ -28,12 +28,11 @@ void times_table(void)
 
 			if (lines != 9)
 			{
+				_putchar(',');
 				if (prevNum < 10)
 					_putchar(' ');
 
 				_putchar(' ');
-
-				_putchar(',');
 			}
 		}
 		prevNum = 0;
