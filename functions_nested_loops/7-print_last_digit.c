@@ -1,6 +1,6 @@
 #include "main.h"
 
-int printnumber(int);
+void printnumber(int);
 
 /**
  * print_last_digit - Prints the last digit of a number
