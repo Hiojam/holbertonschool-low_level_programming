@@ -29,7 +29,7 @@ void times_table(void)
 			if (lines != 9)
 			{
 				_putchar(',');
-				if (prevNum < 10)
+				if (prevNum + 1 < 10)
 					_putchar(' ');
 
 				_putchar(' ');
