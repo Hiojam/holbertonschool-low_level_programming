@@ -13,5 +13,5 @@ void print_to_98(int n)
 		_putchar(',');
 		_putchar(' ');
 	}
-	printf("%d", 98);
+	printf("%d\n", 98);
 }
