@@ -10,15 +10,18 @@ void printnumber(int);
  */
 int print_last_digit(int n)
 {
-	printnumber(n % 10);
-	return (n % 10);
+	int num;
+
+	num = printnumber(n % 10);
+	return (num);
 }
 
 /**
  * printnumber - prints a number
  * @n: number to print
+ * Return: int
  */
-void printnumber(int n)
+int printnumber(int n)
 {
 
 	if (n < 0)
@@ -36,4 +39,5 @@ void printnumber(int n)
 		printnumber(n / 10);
 
 	_putchar(n % 10 + '0');
+	return (n % 10 + '0');
 }
