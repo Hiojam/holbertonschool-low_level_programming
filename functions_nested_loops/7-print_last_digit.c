@@ -32,7 +32,7 @@ int printnumber(int n)
 	if (n == 0)
 	{
 		_putchar('0');
-		return;
+		return 0;
 	}
 
 	if (n / 10)
