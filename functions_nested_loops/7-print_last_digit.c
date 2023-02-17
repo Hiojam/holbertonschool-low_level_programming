@@ -13,7 +13,7 @@ int print_last_digit(int n)
 	int num;
 
 	num = printnumber(n % 10);
-	return (num);
+	return (num % 10 + '0');
 }
 
 /**
@@ -39,5 +39,5 @@ int printnumber(int n)
 		printnumber(n / 10);
 
 	_putchar(n % 10 + '0');
-	return (n % 10 + '0');
+	return (n);
 }
