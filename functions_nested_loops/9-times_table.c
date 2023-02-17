@@ -30,7 +30,8 @@ void times_table(void)
 			{
 				if (prevNum < 10)
 					_putchar(' ');
-					_putchar(' ');
+
+				_putchar(' ');
 
 				_putchar(',');
 			}
