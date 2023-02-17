@@ -39,6 +39,12 @@ void print_to_98(int n)
 void printnumber(int n)
 {
 
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
+
 	if (n == 0)
 	{
 		_putchar('0');
