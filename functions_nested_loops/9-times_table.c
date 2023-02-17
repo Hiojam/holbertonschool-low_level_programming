@@ -1,4 +1,9 @@
 #include "main.h"
+void _putchar(char a){ putchar(a); }
+int main(){
+ times_table();
+ return 0;
+}
 
 void printnumber(int);
 
@@ -18,22 +23,19 @@ void times_table(void)
 			if (lines == 0)
 			{
 				_putchar('0');
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
 				continue;
 			}
 			prevNum = prevNum + rows;
-			printnumber(prevNum);
 
-			if (lines != 9)
+			_putchar(',');
+
+			if (prevNum < 10)
 			{
-				_putchar(',');
-				if (prevNum + 1 < 10)
-					_putchar(' ');
-
 				_putchar(' ');
 			}
+
+			_putchar(' ');
+			printnumber(prevNum);
 		}
 		prevNum = 0;
 		_putchar('\n');
