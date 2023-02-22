@@ -23,7 +23,10 @@ void print_triangle(int n)
 		{
 			_putchar(' ');
 		}
-		_putchar('#');
+		for (y = 0; y < times; y++)
+		{
+			_putchar('#');
+		}
 		_putchar('\n');
-    }
+	}
 }
