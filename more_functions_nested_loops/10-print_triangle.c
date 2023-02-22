@@ -10,6 +10,7 @@ void print_triangle(int n)
 {
 	int times;
 	int z;
+	int y;
 
 	if (n <= 0)
 	{
