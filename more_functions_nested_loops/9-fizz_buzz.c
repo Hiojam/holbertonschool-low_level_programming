@@ -1,13 +1,14 @@
 #include <stdio.h>
 
-/*
- * main - Main function 
+/**
+ * main - Main function
+ * Return: int
  */
 int main(void)
 {
 	int i;
 
-	for (i = i; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
@@ -25,9 +26,9 @@ int main(void)
 		{
 			printf("%d", i);
 		}
-		_putchar(' ');
+		putchar(' ');
 	}
-	_putchar('\n');
+	putchar('\n');
 
 
 	return (0);
