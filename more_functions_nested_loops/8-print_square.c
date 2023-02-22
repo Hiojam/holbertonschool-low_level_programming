@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_diagonal - Draws a diagonal line
+ * print_square - Draws a square
  *
  * @n: int
  * Return: void
  */
-void print_diagonal(int n)
+void print_square(int n)
 {
 	int times;
 	int z;
