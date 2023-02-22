@@ -24,7 +24,7 @@ void print_triangle(int n)
 		{
 			_putchar(' ');
 		}
-		for (y = 0; y < times; y++)
+		for (y = 0; y <= times; y++)
 		{
 			_putchar('#');
 		}
