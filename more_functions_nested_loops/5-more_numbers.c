@@ -1,5 +1,7 @@
 #include "main.h"
 
+void printnumber(int);
+
 /**
  * more_numbers - Prints the numbers from 0 to 14 ten times
  *
