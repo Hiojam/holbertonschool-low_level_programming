@@ -1,3 +1,7 @@
 CC=gcc
-all: school
-school: all
+SOURCES = school
+TARGET = school
+
+all: $(SOURCES) $(TARGET) $(CC) $(SOURCES) -o $(TARGET)
+
+$(TARGET): $(SOURCES) $(CC) $(SOURCES) -o $(TARGET)
