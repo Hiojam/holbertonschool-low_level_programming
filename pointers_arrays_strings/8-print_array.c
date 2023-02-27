@@ -15,7 +15,15 @@ void print_array(int *a, int n)
 	{
 		printf("%d", *a);
 
-		count != n ? printf(", ") : break;
+		if (count != n)
+		{
+			printf(", ");
+		}
+		else
+		{
+			break;
+		}
+
 		count++;
 	}
 }
