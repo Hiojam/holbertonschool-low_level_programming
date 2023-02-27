@@ -12,6 +12,12 @@ void print_rev(char *s)
 	int len = strlen(s);
 	int i;
 
+	if (*s == "")
+	{
+		_putchar('\n');
+		return;
+	}
+
 	for (i = len; i >= 0; i--)
 		printf("%c", s[i]);
 
