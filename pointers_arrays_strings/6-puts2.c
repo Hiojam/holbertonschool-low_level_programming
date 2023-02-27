@@ -9,8 +9,6 @@
  */
 void puts2(char *str)
 {
-	int len = strlen(str) - 1;
-
 	for (; *str; str++)
 	{
 		if (*str % 2 == 0)
