@@ -12,7 +12,7 @@ void puts_half(char *str)
 	int half = len / 2;
 	int i = 0;
 
-	for (; *str; str++)
+	while (str[i++])
 		len++;
 
 	if (len % 2 == 0)
@@ -20,7 +20,7 @@ void puts_half(char *str)
 
 	for (i = half; i < len; i++)
 	{
-		printf("%c",str[i]);
+		printf("%c", str[i]);
 	}
 
 	_putchar('\n');
