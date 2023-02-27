@@ -14,9 +14,9 @@ void puts2(char *str)
 	for (; *str; str++)
 	{
 		if (count % 2 == 0)
-			printf("%c", *str);
+			_putchar(*str);
 
 		count++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
