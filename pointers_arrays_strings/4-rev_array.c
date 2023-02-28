@@ -1,5 +1,7 @@
 #include "main.h"
 
+int main(){ return 0;}
+
 /**
  * reverse_array - Reverses the content of an array
  *
@@ -10,7 +12,7 @@
 void reverse_array(int *a, int n)
 {
 	int i;
-	int b[n];
+	int b[100];
 
 	for (i = n; i >= 0; i--)
 		b[(n - 1) - i] = a[i];
