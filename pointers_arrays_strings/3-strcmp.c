@@ -30,19 +30,13 @@ int _strcmp(char *s1, char *s2)
 int getASCIIValue(char *array)
 {
 	int i, ascii;
-	int result[100];
-	int sumResul;
+	int sumResul = 0;
 
 	for (i = 0; array[i]; i++)
 	{
 		ascii = (int) array[i];
-		result[i] = ascii;
+		sumResul += ascii;
 	}
 
-	for (i = 0; result[i]; i++)
-	{
-		sumResul += result[i];
-	}
-
-	return (*result);
+	return (sumResul);
 }
