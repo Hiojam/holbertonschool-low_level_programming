@@ -1,5 +1,7 @@
 #include "main.h"
 
+int *getASCIIValue(char *array);
+
 /**
  * _strcmp - Compares two strings
  *
