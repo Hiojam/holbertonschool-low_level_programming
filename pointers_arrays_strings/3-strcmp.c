@@ -29,7 +29,6 @@ int _strcmp(char *s1, char *s2)
  */
 int *getASCIIValue(char *array)
 {
-	char c;
 	int i, ascii;
 	int result[100];
 
