@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * *_strncat - Copy the src string to the dest string
+ * *_strncpy - Copy the src string to the dest string
  *
  * @dest: *char
  * @src: *char
  * @n: int
  * Return: Pointer to the resulting string
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0;
 
