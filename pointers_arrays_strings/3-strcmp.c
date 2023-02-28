@@ -1,6 +1,6 @@
 #include "main.h"
 
-int *getASCIIValue(char *array);
+int getASCIIValue(char *array);
 
 /**
  * _strcmp - Compares two strings
@@ -16,7 +16,7 @@ int _strcmp(char *s1, char *s2)
 	if (s1Len > s2Len)
 		return (s1Len - s2Len);
 	else if (s1Len < s2Len)
-		return (-(s1Len - s2Len));
+		return (s1Len - s2Len);
 
 	return (0);
 }
@@ -27,10 +27,11 @@ int _strcmp(char *s1, char *s2)
  * @array: *char
  * Return: int
  */
-int *getASCIIValue(char *array)
+int getASCIIValue(char *array)
 {
 	int i, ascii;
 	int result[100];
+	int sumResul;
 
 	for (i = 0; array[i]; i++)
 	{
@@ -38,5 +39,10 @@ int *getASCIIValue(char *array)
 		result[i] = ascii;
 	}
 
-	return (result);
+	for (i = 0; result[i]; i++)
+	{
+		sumResul += result[i];
+	}
+
+	return (*result);
 }
