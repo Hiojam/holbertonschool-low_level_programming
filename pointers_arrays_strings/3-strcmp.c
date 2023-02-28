@@ -1,7 +1,5 @@
 #include "main.h"
 
-int getASCIIValue(char *array);
-
 /**
  * _strcmp - Compares two strings
  *
@@ -11,32 +9,19 @@ int getASCIIValue(char *array);
  */
 int _strcmp(char *s1, char *s2)
 {
-	int s1Len = getASCIIValue(s1), s2Len = getASCIIValue(s2);
+	int s1Val = 0, s2Val = 0;
+	int i = 0;
 
-	if (s1Len > s2Len)
-		return (s1Len - s2Len);
-	else if (s1Len < s2Len)
-		return (s1Len - s2Len);
-
-	return (0);
-}
-
-/**
- * getASCIIValue - Get the ascii value of a *char
- *
- * @array: *char
- * Return: int
- */
-int getASCIIValue(char *array)
-{
-	int i, ascii;
-	int sumResul = 0;
-
-	for (i = 0; array[i]; i++)
+	for (; s1[i]; i++)
 	{
-		ascii = (int) array[i];
-		sumResul += ascii;
+		s1Val = s1[i];
+		s2Val = s2[i];
+
+		if (s1Val > s2Val)
+			return (s1Val - s2Val);
+		else if (s1Val < s2Val)
+			return (s1Val - s2Val);
 	}
 
-	return (sumResul);
+	return (0);
 }
