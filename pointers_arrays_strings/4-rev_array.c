@@ -1,7 +1,5 @@
 #include "main.h"
 
-int main(){ return 0;}
-
 /**
  * reverse_array - Reverses the content of an array
  *
