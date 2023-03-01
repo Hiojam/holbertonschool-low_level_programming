@@ -10,9 +10,19 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
+	int acceptLen = 0, matches = 0;
 
-	for (; accept[i]; i++)
+	for (; accept[acceptLen]; acceptLen++)
 		;
 
-	return (i + 1);
+	for (; s[i]; i++)
+	{
+		if (s[i] == accept[i])
+			matches++;
+
+		if (matches == acceptLen)
+			break;
+	}
+
+	return (i);
 }
