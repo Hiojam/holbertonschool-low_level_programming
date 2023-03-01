@@ -11,7 +11,7 @@ int is_separator(char);
 char *cap_string(char *s)
 {
 	int i = 0;
-	int cap = 0;
+	int cap = 1;
 
 	for (; s[i]; i++)
 	{
