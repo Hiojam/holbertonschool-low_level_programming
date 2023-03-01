@@ -14,7 +14,7 @@ char *leet(char *s)
 
 	for (; s[i]; i++)
 	{
-		for (; letters[z]; z++)
+		for (z = 0; letters[z]; z++)
 		{
 			if (letters[z] == s[i])
 				s[i] = replace[z / 2];
