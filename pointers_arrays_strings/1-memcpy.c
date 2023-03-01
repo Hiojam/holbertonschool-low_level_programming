@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * *_memset - Copies a memory area
+ * *_memcpy - Copies a memory area
  *
  * @dest: *char
  * @src: *char
  * @n: uns int
  * Return: Pointer to dest
  */
-char *_memset(char *dest, char *src, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 
