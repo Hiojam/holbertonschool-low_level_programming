@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_memcpy - Copies a memory area
+ * *_memset - Copies a memory area
  *
  * @dest: *char
  * @src: *char
