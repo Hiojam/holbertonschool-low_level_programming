@@ -39,7 +39,7 @@ int get_firstsegment(char *s)
 	char a[] = {' ', '	', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
 	for (; s[i]; i++)
-		for (; a[x]; x++)
+		for (x = 0; a[x]; x++)
 			if (s[x] == s[i])
 				return (i);
 
