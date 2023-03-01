@@ -40,7 +40,7 @@ int get_firstsegment(char *s)
 
 	for (; s[i]; i++)
 		for (x = 0; a[x]; x++)
-			if (s[x] == s[i])
+			if (s[i] == a[x])
 				return (i);
 
 	return (0);
