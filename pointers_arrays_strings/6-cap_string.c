@@ -41,10 +41,10 @@ char *cap_string(char *s)
 int is_separator(char c)
 {
 	int i = 0;
-	char separators[] = {' ','	','\n',',',';','.','!','?','"','(',')','{','}'};
+	char s[] = {' ', '	', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
-	for (; separators[i]; i++)
-		if (separators[i] == c)
+	for (; s[i]; i++)
+		if (s[i] == c)
 			return (1);
 
 	return (0);
