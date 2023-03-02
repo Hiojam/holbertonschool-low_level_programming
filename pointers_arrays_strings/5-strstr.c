@@ -11,19 +11,28 @@ int get_firstsegment(char *s);
  */
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i = 0, max = get_firstsegment(needle);
+	unsigned int i = 0, max = 0, ocurrence = 0;
 	int z = 0;
+	int found = 0;
 
-	for (; needle[i] != '\0'; i++)
+	for (; needle[max]; max++)
+		;
+
+	for (; haystack[i] != '\0'; i++)
 	{
-		for (z = 0; haystack[z]; z++)
+		for (z = 0; needle[z]; z++)
 		{
-			if (needle[i] == haystack[z])
-				return (needle + i);
+			if (haystack[i] == needle[z])
+			{
+				ocurrence++;
+				found = 1;
+				if (ocurrence == max)
+					return (haystack + (i - (ocurrence - 1)));
+			}
 		}
-
-		if (i == max)
-			break;
+		if (found == 0)
+			ocurrence = 0;
+		found = 0;
 	}
 
 	return (0);
