@@ -11,7 +11,7 @@ int get_firstsegment(char *s);
  */
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i = 0, max = get_firstsegment(needle);
+	unsigned int i = 0;
 	int z = 0;
 
 	for (; needle[i] != '\0'; i++)
@@ -21,9 +21,6 @@ char *_strstr(char *haystack, char *needle)
 			if (needle[i] == haystack[z])
 				return (needle + i);
 		}
-
-		if (i == max)
-			break;
 	}
 
 	return (0);
