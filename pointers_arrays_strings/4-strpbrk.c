@@ -14,13 +14,16 @@ char *_strpbrk(char *s, char *accept)
 	unsigned int i = 0, max = get_firstsegment(s);
 	int z = 0;
 
-	for (; s[i] < max; i++)
+	for (; s[i]; i++)
 	{
 		for (z = 0; accept[z]; z++)
 		{
 			if (s[i] == accept[z])
 				return (s + i);
 		}
+
+		if (i == max)
+			break;
 	}
 
 	return (0);
