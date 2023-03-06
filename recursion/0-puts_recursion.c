@@ -18,5 +18,4 @@ void _puts_recursion(char *n)
 	}
 	else
 		_putchar('\n');
-	
 }
