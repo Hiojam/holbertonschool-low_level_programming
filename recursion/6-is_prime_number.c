@@ -10,10 +10,12 @@ int prime(int num, int i);
  */
 int is_prime_number(int n)
 {
-	int a = prime(n, n / 2);
+	int a;
 
 	if (n < 0 || n == 0 || n == 1)
 		return (0);
+
+	a = prime(n, n / 2);
 
 	return (a);
 }
