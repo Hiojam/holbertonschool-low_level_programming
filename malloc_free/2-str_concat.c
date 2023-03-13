@@ -12,6 +12,12 @@ char *str_concat(char *s1, char *s2)
 	char *cpy;
 	unsigned int s1Size = 0, s2Size = 0, i = 0, z = 0;
 
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		s2 = "";
+
 	for (; s1[s1Size]; s1Size++)
 		;
 
