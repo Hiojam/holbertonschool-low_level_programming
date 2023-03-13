@@ -25,12 +25,10 @@ cat <<EOT >> $fileName
  * @n: $paramType
  * Return: $retDesc
  */
-$funcType $funcName($paramType n)
+$funcType $funcName($paramType)
 {
-    return ();
+  return ();
 }
 EOT
-
-echo "$funcType $funcName($paramType);" >> main.h
 
 echo "File created successfuly."
