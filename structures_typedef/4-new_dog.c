@@ -3,7 +3,7 @@
 /**
  * str_dup - Duplicates a string.
  *
- * @s - Given string.
+ * @s: *char
  * Return: Pointer to the new String.
  */
 char *str_dup(char *s)
@@ -50,7 +50,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog);
 		return (NULL);
 	}
-	
+
 	dog->age = age;
 	dog->owner = str_dup(owner);
 
