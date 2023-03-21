@@ -22,7 +22,7 @@ void print_all(const char * const format, ...)
 	};
 	va_list args;
 	unsigned int i = 0, z;
-	char *separator = ", ";
+	char *separator = "";
 
 	va_start(args, format);
 
@@ -34,9 +34,9 @@ void print_all(const char * const format, ...)
 		{
 			if (s[z].symbol == format[i])
 			{
+				printf("%s", separator);
 				s[z].f(args);
-				if (format[i + 1])
-					printf("%s", separator);
+				separator = ", ";
 				break;
 			}
 			z++;
