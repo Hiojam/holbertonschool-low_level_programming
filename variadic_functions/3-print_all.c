@@ -68,7 +68,7 @@ void print_c(va_list l)
  */
 void print_i(va_list l)
 {
-  printf("%d", va_arg(l, int));
+	printf("%d", va_arg(l, int));
 }
 
 /**
@@ -79,7 +79,7 @@ void print_i(va_list l)
  */
 void print_f(va_list l)
 {
-  printf("%f", va_arg(l, double));
+	printf("%f", va_arg(l, double));
 }
 
 /**
@@ -95,5 +95,5 @@ void print_s(va_list l)
 	if (s == NULL)
 		s = "(nil)";
 
-  printf("%s", s);
+	printf("%s", s);
 }
