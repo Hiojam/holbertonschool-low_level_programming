@@ -22,10 +22,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(args, n);
 
 	for (; i < n; i++)
-		printf("%d%s", va_arg(args, int));
+		printf("%d%s", va_arg(args, int), separator);
 
-	_putchar('\n');
+	putchar('\n');
 
 	va_end(args);
-	return (resul);
 }
