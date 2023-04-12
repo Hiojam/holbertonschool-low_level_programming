@@ -14,7 +14,7 @@ int *checkArguments(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: %s file_from file_to\n", argv[0]);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
@@ -81,12 +81,12 @@ int main(int argc, char *argv[])
 	}
 	if (close(oFrom) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can´t close %d\n", oFrom);
+		dprintf(STDERR_FILENO, "Error: Can´t close fd\n");
 		exit(100);
 	}
 	if (close(oTo) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close %d\n", oTo);
+		dprintf(STDERR_FILENO, "Error: Can't close fd\n");
 		exit(100);
 	}
 
